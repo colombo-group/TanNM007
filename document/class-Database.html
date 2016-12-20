@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Database</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Config.html">Config</a></li>
+				<li><a href="class-Cookie.html">Cookie</a></li>
+				<li class="active"><a href="class-Database.html">Database</a></li>
+				<li><a href="class-Hash.html">Hash</a></li>
+				<li><a href="class-Input.html">Input</a></li>
+				<li><a href="class-Redirect.html">Redirect</a></li>
+				<li><a href="class-Session.html">Session</a></li>
+				<li><a href="class-Token.html">Token</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-Validate.html">Validate</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Database</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				<p>abc
+since 1.0</p><br>
+			<b>Located at</b> <a href="source-class-Database.html#2-203" title="Go to source code">Database.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getInstance" id="_getInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstance">#</a>
+		<code><a href="source-class-Database.html#35-45" title="Go to source code">getInstance</a>( )</code>
+
+		<div class="description short">
+			<p>*hàm tạo đối tượng database mới</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm tạo đối tượng database mới</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					object<br>database
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-Database.html#46-73" title="Go to source code">query</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>*hàm thực thi câu truy vấn</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm thực thi câu truy vấn</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd>câu truy vấn sql</dd>
+					<dt><var>$params</var></dt>
+					<dd>số truyền vào bind_param</dd>
+				</dl></div>
+
+
+
+				<h4>Retunr</h4>
+				<div class="list">
+						trả về dối tượng database<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="action" id="_action">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_action">#</a>
+		<code><a href="source-class-Database.html#74-98" title="Go to source code">action</a>( <span>string <var>$action</var></span>, <span>string <var>$table</var></span>, <span>array <var>$where</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>*hàm thực thi câu truy vấn có điều kiện</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm thực thi câu truy vấn có điều kiện</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd>thực thi cái gì</dd>
+					<dt><var>$table</var></dt>
+					<dd>bảng nào</dd>
+					<dt><var>$where</var></dt>
+					<dd>mảng chứa điều kiênk</dd>
+				</dl></div>
+
+
+
+				<h4>Retunr</h4>
+				<div class="list">
+						trả về giá trị<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Database.html#99-108" title="Go to source code">get</a>( <span>string <var>$table</var></span>, <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			<p>*hàm thực thi câu truy vấn có điều kiện lấy ra tất cả</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm thực thi câu truy vấn có điều kiện lấy ra tất cả</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>bảng nào</dd>
+					<dt><var>$where</var></dt>
+					<dd>mảng chứa điều kiênk</dd>
+				</dl></div>
+
+
+
+				<h4>Retunr</h4>
+				<div class="list">
+						trả về giá trị<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			trả
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Database.html#109-118" title="Go to source code">delete</a>( <span>string <var>$table</var></span>, <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			<p>*hàm thực thi xoas</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm thực thi xoas</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>bảng nào</dd>
+					<dt><var>$where</var></dt>
+					<dd>mảng chứa điều kiênk</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					trả<br>về giá trị
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+
+			true|fasle
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-Database.html#119-147" title="Go to source code">insert</a>( <span>string <var>$table</var></span>, <span>array <var>$fields</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>*hàm thực thi câu truy vấn thêm mói</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm thực thi câu truy vấn thêm mói</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>bảng nào</dd>
+					<dt><var>$fields</var></dt>
+					<dd>mảng value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|fasle
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			true|fasle
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-Database.html#148-174" title="Go to source code">update</a>( <span>string <var>$table</var></span>, <span>integer <var>$id</var></span>, <span>array <var>$fields</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>*hàm thực thi câu truy vấn cập nhật</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm thực thi câu truy vấn cập nhật</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>bảng nào</dd>
+					<dt><var>$id</var></dt>
+					<dd>id</dd>
+					<dt><var>$fields</var></dt>
+					<dd>mảng giá trị cập nhật</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|fasle
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="results" id="_results">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_results">#</a>
+		<code><a href="source-class-Database.html#175-181" title="Go to source code">results</a>( )</code>
+
+		<div class="description short">
+			<p>*hàm trả về giá tri</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm trả về giá tri</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="first" id="_first">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_first">#</a>
+		<code><a href="source-class-Database.html#182-188" title="Go to source code">first</a>( )</code>
+
+		<div class="description short">
+			<p>*hàm trả về giá tri đầu tiên trong mảng réult</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm trả về giá tri đầu tiên trong mảng réult</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error" id="_error">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error">#</a>
+		<code><a href="source-class-Database.html#189-195" title="Go to source code">error</a>( )</code>
+
+		<div class="description short">
+			<p>*hàm trả về giá tri object lỗi</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm trả về giá tri object lỗi</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code><a href="source-class-Database.html#196-202" title="Go to source code">count</a>( )</code>
+
+		<div class="description short">
+			<p>*hàm trả về giá tri sl</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>*hàm trả về giá tri sl</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
