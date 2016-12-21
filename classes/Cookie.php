@@ -6,7 +6,7 @@
 		*/
 
 		/**
-			 **hàm  kiểm xem cookie có tồn tại
+			 *hàm  kiểm xem cookie có tồn tại
 			 *@param string $_COOKIE['$name'] value của cookie $name
 			 *@return true|false nếu tồn tại trả về true|false  
 			*/
@@ -14,8 +14,8 @@
 			
 			return (isset($_COOKIE[$name])) ? true : false;
 		}
-/**
-			 **hàm  lấy giá trị cookie có tên $name
+			/**
+			 *hàm  lấy giá trị cookie có tên $name
 			 *@param string $name tên  cookie cần lấy
 			 *@return tên cookie $name  
 			*/
@@ -24,7 +24,7 @@
 			return $_COOKIE[$name];
 		}
 /**
-			 **hàm  tạo cookie 
+			 *hàm  tạo cookie 
 			 *@param string $name tên cookie 
 			 *@param string $value giá trị cookie 
 			 *@param int $expiry thời gian sống cookie 

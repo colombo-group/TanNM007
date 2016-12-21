@@ -74,11 +74,11 @@
 </span><span id="3" class="l">    <span class="php-keyword1">class</span> Token {
 </span><span id="4" class="l">        <span class="php-comment">/**
 </span></span><span id="5" class="l"><span class="php-comment">         *@autor TanNM
-</span></span><span id="6" class="l"><span class="php-comment">         ** lớp làm việc token
+</span></span><span id="6" class="l"><span class="php-comment">         *lớp làm việc token
 </span></span><span id="7" class="l"><span class="php-comment">        */</span>
 </span><span id="8" class="l">        <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> generate() {
 </span><span id="9" class="l">            <span class="php-comment">/**
-</span></span><span id="10" class="l"><span class="php-comment">             **hàm tạo mã
+</span></span><span id="10" class="l"><span class="php-comment">             *hàm tạo mã
 </span></span><span id="11" class="l"><span class="php-comment">             *@return session token
 </span></span><span id="12" class="l"><span class="php-comment">            */</span>
 </span><span id="13" class="l">            <span class="php-keyword1">return</span> Session::put(Config::get(<span class="php-quote">'session/tokenName'</span>), <span class="php-keyword2">md5</span>(<span class="php-keyword2">uniqid</span>()));
@@ -86,7 +86,7 @@
 </span><span id="15" class="l">
 </span><span id="16" class="l">        <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> check(<span class="php-var">$token</span>) {
 </span><span id="17" class="l">            <span class="php-comment">/**
-</span></span><span id="18" class="l"><span class="php-comment">             **kiểm tra mã
+</span></span><span id="18" class="l"><span class="php-comment">             *kiểm tra mã
 </span></span><span id="19" class="l"><span class="php-comment">             *@param string $token tên token 
 </span></span><span id="20" class="l"><span class="php-comment">             *@return true false
 </span></span><span id="21" class="l"><span class="php-comment">            */</span>

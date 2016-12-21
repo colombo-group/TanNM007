@@ -1,13 +1,13 @@
 <?php
 		/**
          *@author TAnNM
-         **lóp làm việc với password
+         *lóp làm việc với password
 		*/
 	class Hash {
 		
 		
 		/**
-			 **mã hóa mật khẩu
+			 *mã hóa mật khẩu
 			 *@param string $string mật khẩu chưa mã hóa
 			 *@param string $salt muối
 			 *@return chỗi mk đã mã hóa
@@ -17,7 +17,7 @@
 			return hash('sha256', $string.$salt);
 		}
 			/**
-			 **tạo chuỗi bất kỳ
+			 *tạo chuỗi bất kỳ
 			 *@param string $lenght độ dài
 			 *@return chỗi 
 			*/
@@ -26,7 +26,7 @@
 			return mcrypt_create_iv($length);
 		}
 			/**
-			 **hàm trả về chuỗi bất kỳ
+			 *hàm trả về chuỗi bất kỳ
 			 *@return chỗi 
 			*/
 		public static function unique() {

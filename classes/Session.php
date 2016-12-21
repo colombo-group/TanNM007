@@ -1,11 +1,11 @@
 <?php
 		/**
          *@author TanNM
-         **lớp làm việc với session
+         *lớp làm việc với session
 		 */
 	class Session {
 			/**
-             ** kiểm tra seesion $name tồn tại k
+             * kiểm tra seesion $name tồn tại k
              *@param $name tên seesion
              *@return true nếu tồn tại.
 			 */
@@ -14,7 +14,7 @@
 			return (isset($_SESSION[$name])) ? true : false;
 		}
 			/**
-             ** gán giá trị session
+             * gán giá trị session
              *@param string $name tên session
              *@param string $value giá trị session
              *@return session
@@ -24,7 +24,7 @@
 			return $_SESSION[$name] = $value;
 		}
 			/**
-             **lấy giá trị session
+             *lấy giá trị session
              *@param string $name tên session
              *@return session
 			 */
@@ -33,7 +33,7 @@
 			return $_SESSION[$name];
 		}
 			/**
-             **xóa session
+             *xóa session
              *@param string $name tên session
 			 */
 		public static function delete($name) {
@@ -43,7 +43,7 @@
 			}
 		}
 			/**
-             **tạo session flash
+             *tạo session flash
              *@param string $name tên session
              *@param string $string value session
              *@return session

@@ -1,13 +1,13 @@
 <?php
 	class User {
-		/*
+		/**
  		 *@author TanNM
- 		 ** làm việc với user
- 		 **@var $_db object database
- 		 **@var $_data mảng dữ liệu
- 		 **@var $_sessionName session
- 		 **@var $_cookieName cookie
- 		 **@var $_isLoggedIn boolean
+ 		 * làm việc với user
+ 		 *@var $_db object database
+ 		 *@var $_data mảng dữ liệu
+ 		 *@var $_sessionName session
+ 		 *@var $_cookieName cookie
+ 		 *@var $_isLoggedIn boolean
 		*/
 		private $_db,
 				$_data,
@@ -15,7 +15,7 @@
 				$_cookieName,
 				$_isLoggedIn;
 			/**
-             **hàm khởi tạo
+             *hàm khởi tạo
              *@param string $user lấy giá trị session
 			*/
 		public function __construct($user = null) {
@@ -39,7 +39,7 @@
 			}
 		}
 		/**
-		 **hàm update
+		 *hàm update
 		 *@param array $fields
 		 *@param int $id
 		*/
@@ -88,7 +88,7 @@
 		}
 
 		/**
-		 ** hàm đăng nhập
+		 * hàm đăng nhập
 		 *@param string $username tên 
 		 *@param string $password ps 
 		 *@param boolean $remember 
@@ -127,7 +127,7 @@
 		}
 
 		/**
-		 ** hàm kiểm tra quyền user
+		 * hàm kiểm tra quyền user
 		 *@param string $key mã  
 		 *	
 		 *@return true false	
@@ -144,7 +144,7 @@
 			return false;
 		}
 		/**
-		 ** hàm kiểm tra user tồn tại k
+		 * hàm kiểm tra user tồn tại k
 		 *	
 		 *@return true false	
 		 */
@@ -153,7 +153,7 @@
 		}
 
 		/**
-		 ** hàm đăng xuât
+		 * hàm đăng xuât
 		 *	
 		 *	
 		 */
@@ -164,7 +164,7 @@
 		}
 
 		/**
-		 ** hàm lấy dữ liệu
+		 * hàm lấy dữ liệu
 		 *	
 		 *@return data	
 		 */
@@ -173,7 +173,7 @@
 		}
 
 		/**
-		 ** hàm kiểm tra đăng nhập chưa
+		 * hàm kiểm tra đăng nhập chưa
 		 *	
 		 *@return boolean _isloggedIn	
 		 */

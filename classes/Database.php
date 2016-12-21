@@ -5,7 +5,7 @@
 */
 	class Database {
 		/**
-		 ** lớp database
+		 * lớp database
 		 *@param object $_instance  đối tượng Database
 		 *@param object $_pdo  đối tượng PDO
 		 *@param object $_query 	đối tượng PDO
@@ -21,7 +21,7 @@
 				$_count = 0;
 
 		/**
-		 **hàm khởi tạo đối tượng PDO
+		 *hàm khởi tạo đối tượng PDO
 	     */
 		private function __construct() {
 			
@@ -33,7 +33,7 @@
 		}
 
 		/**
-         **hàm tạo đối tượng database mới
+         *hàm tạo đối tượng database mới
          * @return object database
 	     */
 		public static function getInstance() {
@@ -44,7 +44,7 @@
 			return self::$_instance;
 		}
 			/**
-             **hàm thực thi câu truy vấn
+             *hàm thực thi câu truy vấn
              *@param string $sql câu truy vấn sql
              *@param array tham số truyền vào bind_param
              *@retunr trả về dối tượng database
@@ -72,7 +72,7 @@
 			return $this;
 		}
 			/**
-			 **hàm thực thi câu truy vấn có điều kiện
+			 *hàm thực thi câu truy vấn có điều kiện
              *@param string $action  thực thi cái gì
              *@param string $table bảng nào
              *@param array $where mảng chứa điều kiênk
@@ -97,7 +97,7 @@
 			return false;
 		}
 		/**
-			 **hàm thực thi câu truy vấn có điều kiện lấy ra tất cả
+			 *hàm thực thi câu truy vấn có điều kiện lấy ra tất cả
              *@param string $table bảng nào
              *@param array $where mảng chứa điều kiênk
              *@retunr trả về giá trị
@@ -107,7 +107,7 @@
 			return $this->action('SELECT *', $table, $where); //ToDo: Allow for specific SELECT (SELECT username)
 		}
 		/**
-			 **hàm thực thi xoas
+			 *hàm thực thi xoas
              *@param string $table bảng nào
              *@param array $where mảng chứa điều kiênk
              *@return trả về giá trị
@@ -117,7 +117,7 @@
 			return $this->action('DELETE', $table, $where);
 		}
 		/**
-			 **hàm thực thi câu truy vấn thêm mói
+			 *hàm thực thi câu truy vấn thêm mói
              *@param string $table bảng nào
              *@param array $fields mảng value
              *@return true|fasle  
@@ -146,7 +146,7 @@
 			return false;
 		}
 		/**
-			 **hàm thực thi câu truy vấn cập nhật
+			 *hàm thực thi câu truy vấn cập nhật
              *@param string $table bảng nào
              *@param int $id id
              *@param array $fields mảng giá trị cập nhật
@@ -173,28 +173,28 @@
 			return false;
 		}
 		/**
-		 **hàm trả về giá tri
+		 *hàm trả về giá tri
 		*/
 		public function results() {
 			
 			return $this->_results;
 			}
 			/**
-			 **hàm trả về giá tri đầu tiên trong mảng réult
+			 *hàm trả về giá tri đầu tiên trong mảng réult
 			*/
 		public function first() {
 			
 			return $this->_results[0];
 		}
 		/**
-			 **hàm trả về giá tri object lỗi
+			 *hàm trả về giá tri object lỗi
 			*/
 		public function error() {
 			
 			return $this->_error;
 		}
 		/**
-			 **hàm trả về giá tri sl
+			 *hàm trả về giá tri sl
 			*/
 		public function count() {
 			

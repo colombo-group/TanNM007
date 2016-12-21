@@ -76,7 +76,7 @@
 </span></span><span id="5" class="l"><span class="php-comment">*/</span>
 </span><span id="6" class="l">    <span class="php-keyword1">class</span> Database {
 </span><span id="7" class="l">        <span class="php-comment">/**
-</span></span><span id="8" class="l"><span class="php-comment">         ** lớp database
+</span></span><span id="8" class="l"><span class="php-comment">         * lớp database
 </span></span><span id="9" class="l"><span class="php-comment">         *@param object $_instance  đối tượng Database
 </span></span><span id="10" class="l"><span class="php-comment">         *@param object $_pdo  đối tượng PDO
 </span></span><span id="11" class="l"><span class="php-comment">         *@param object $_query     đối tượng PDO
@@ -92,7 +92,7 @@
 </span><span id="21" class="l">                <span class="php-var">$_count</span> = <span class="php-num">0</span>;
 </span><span id="22" class="l">
 </span><span id="23" class="l">        <span class="php-comment">/**
-</span></span><span id="24" class="l"><span class="php-comment">         **hàm khởi tạo đối tượng PDO
+</span></span><span id="24" class="l"><span class="php-comment">         *hàm khởi tạo đối tượng PDO
 </span></span><span id="25" class="l"><span class="php-comment">         */</span>
 </span><span id="26" class="l">        <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> __construct() {
 </span><span id="27" class="l">            
@@ -104,7 +104,7 @@
 </span><span id="33" class="l">        }
 </span><span id="34" class="l">
 </span><span id="35" class="l">        <span class="php-comment">/**
-</span></span><span id="36" class="l"><span class="php-comment">         **hàm tạo đối tượng database mới
+</span></span><span id="36" class="l"><span class="php-comment">         *hàm tạo đối tượng database mới
 </span></span><span id="37" class="l"><span class="php-comment">         * @return object database
 </span></span><span id="38" class="l"><span class="php-comment">         */</span>
 </span><span id="39" class="l">        <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> getInstance() {
@@ -115,7 +115,7 @@
 </span><span id="44" class="l">            <span class="php-keyword1">return</span> self::<span class="php-var">$_instance</span>;
 </span><span id="45" class="l">        }
 </span><span id="46" class="l">            <span class="php-comment">/**
-</span></span><span id="47" class="l"><span class="php-comment">             **hàm thực thi câu truy vấn
+</span></span><span id="47" class="l"><span class="php-comment">             *hàm thực thi câu truy vấn
 </span></span><span id="48" class="l"><span class="php-comment">             *@param string $sql câu truy vấn sql
 </span></span><span id="49" class="l"><span class="php-comment">             *@param array tham số truyền vào bind_param
 </span></span><span id="50" class="l"><span class="php-comment">             *@retunr trả về dối tượng database
@@ -143,7 +143,7 @@
 </span><span id="72" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
 </span><span id="73" class="l">        }
 </span><span id="74" class="l">            <span class="php-comment">/**
-</span></span><span id="75" class="l"><span class="php-comment">             **hàm thực thi câu truy vấn có điều kiện
+</span></span><span id="75" class="l"><span class="php-comment">             *hàm thực thi câu truy vấn có điều kiện
 </span></span><span id="76" class="l"><span class="php-comment">             *@param string $action  thực thi cái gì
 </span></span><span id="77" class="l"><span class="php-comment">             *@param string $table bảng nào
 </span></span><span id="78" class="l"><span class="php-comment">             *@param array $where mảng chứa điều kiênk
@@ -168,7 +168,7 @@
 </span><span id="97" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="98" class="l">        }
 </span><span id="99" class="l">        <span class="php-comment">/**
-</span></span><span id="100" class="l"><span class="php-comment">             **hàm thực thi câu truy vấn có điều kiện lấy ra tất cả
+</span></span><span id="100" class="l"><span class="php-comment">             *hàm thực thi câu truy vấn có điều kiện lấy ra tất cả
 </span></span><span id="101" class="l"><span class="php-comment">             *@param string $table bảng nào
 </span></span><span id="102" class="l"><span class="php-comment">             *@param array $where mảng chứa điều kiênk
 </span></span><span id="103" class="l"><span class="php-comment">             *@retunr trả về giá trị
@@ -178,7 +178,7 @@
 </span><span id="107" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;action(<span class="php-quote">'SELECT *'</span>, <span class="php-var">$table</span>, <span class="php-var">$where</span>); <span class="php-comment">//ToDo: Allow for specific SELECT (SELECT username)</span>
 </span><span id="108" class="l">        }
 </span><span id="109" class="l">        <span class="php-comment">/**
-</span></span><span id="110" class="l"><span class="php-comment">             **hàm thực thi xoas
+</span></span><span id="110" class="l"><span class="php-comment">             *hàm thực thi xoas
 </span></span><span id="111" class="l"><span class="php-comment">             *@param string $table bảng nào
 </span></span><span id="112" class="l"><span class="php-comment">             *@param array $where mảng chứa điều kiênk
 </span></span><span id="113" class="l"><span class="php-comment">             *@return trả về giá trị
@@ -188,7 +188,7 @@
 </span><span id="117" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;action(<span class="php-quote">'DELETE'</span>, <span class="php-var">$table</span>, <span class="php-var">$where</span>);
 </span><span id="118" class="l">        }
 </span><span id="119" class="l">        <span class="php-comment">/**
-</span></span><span id="120" class="l"><span class="php-comment">             **hàm thực thi câu truy vấn thêm mói
+</span></span><span id="120" class="l"><span class="php-comment">             *hàm thực thi câu truy vấn thêm mói
 </span></span><span id="121" class="l"><span class="php-comment">             *@param string $table bảng nào
 </span></span><span id="122" class="l"><span class="php-comment">             *@param array $fields mảng value
 </span></span><span id="123" class="l"><span class="php-comment">             *@return true|fasle  
@@ -217,7 +217,7 @@
 </span><span id="146" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="147" class="l">        }
 </span><span id="148" class="l">        <span class="php-comment">/**
-</span></span><span id="149" class="l"><span class="php-comment">             **hàm thực thi câu truy vấn cập nhật
+</span></span><span id="149" class="l"><span class="php-comment">             *hàm thực thi câu truy vấn cập nhật
 </span></span><span id="150" class="l"><span class="php-comment">             *@param string $table bảng nào
 </span></span><span id="151" class="l"><span class="php-comment">             *@param int $id id
 </span></span><span id="152" class="l"><span class="php-comment">             *@param array $fields mảng giá trị cập nhật
@@ -244,28 +244,28 @@
 </span><span id="173" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="174" class="l">        }
 </span><span id="175" class="l">        <span class="php-comment">/**
-</span></span><span id="176" class="l"><span class="php-comment">         **hàm trả về giá tri
+</span></span><span id="176" class="l"><span class="php-comment">         *hàm trả về giá tri
 </span></span><span id="177" class="l"><span class="php-comment">        */</span>
 </span><span id="178" class="l">        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> results() {
 </span><span id="179" class="l">            
 </span><span id="180" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;_results;
 </span><span id="181" class="l">            }
 </span><span id="182" class="l">            <span class="php-comment">/**
-</span></span><span id="183" class="l"><span class="php-comment">             **hàm trả về giá tri đầu tiên trong mảng réult
+</span></span><span id="183" class="l"><span class="php-comment">             *hàm trả về giá tri đầu tiên trong mảng réult
 </span></span><span id="184" class="l"><span class="php-comment">            */</span>
 </span><span id="185" class="l">        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> first() {
 </span><span id="186" class="l">            
 </span><span id="187" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;_results[<span class="php-num">0</span>];
 </span><span id="188" class="l">        }
 </span><span id="189" class="l">        <span class="php-comment">/**
-</span></span><span id="190" class="l"><span class="php-comment">             **hàm trả về giá tri object lỗi
+</span></span><span id="190" class="l"><span class="php-comment">             *hàm trả về giá tri object lỗi
 </span></span><span id="191" class="l"><span class="php-comment">            */</span>
 </span><span id="192" class="l">        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> error() {
 </span><span id="193" class="l">            
 </span><span id="194" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;_error;
 </span><span id="195" class="l">        }
 </span><span id="196" class="l">        <span class="php-comment">/**
-</span></span><span id="197" class="l"><span class="php-comment">             **hàm trả về giá tri sl
+</span></span><span id="197" class="l"><span class="php-comment">             *hàm trả về giá tri sl
 </span></span><span id="198" class="l"><span class="php-comment">            */</span>
 </span><span id="199" class="l">        <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">count</span>() {
 </span><span id="200" class="l">            

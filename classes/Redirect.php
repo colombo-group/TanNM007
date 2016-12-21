@@ -1,13 +1,13 @@
 <?php
 		/**
-		 **@author TanNM
-         **lớp điều hướng
+		 *@author TanNM
+         *lớp điều hướng
 		*/
 	class Redirect {
 			/**
-             **hàm điều hướng
+             *hàm điều hướng
              *@param string $location url
-             *@retun trả về 404,php nếu $locaiton là số : điều hướng đi tới $location
+             *@return trả về 404,php nếu $locaiton là số : điều hướng đi tới $location
 			*/
 		public static function to($location = null) {
 		

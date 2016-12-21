@@ -3,14 +3,16 @@
 		 *@author TanNM
 		 **Lớp kiểm tra input
 		*/
+
+		/**
+			 *hàm kiểm tra phuoeng thức post hoặc get
+			 *@param string $type tên phuong thức
+			 *@return true false
+			*/
 	class Input {
 		
 		
-			/**
-			 **hàm kiểm tra phuoeng thức post hoặc get
-			 **@param string $type tên phuong thức
-			 **@return true false
-			*/
+			
 		public static function exists($type = 'post') {
 			
 			switch ($type) {
@@ -26,9 +28,9 @@
 			}
 		}
 			/**
-			 **hàm kiểm tra tồn tại biến k
-			 **@param string $item tên biến
-			 **@return true false
+			 *hàm kiểm tra tồn tại biến k
+			 *@param string $item tên biến
+			 *@return true false
 			*/
 		public static function get($item) {
 			
