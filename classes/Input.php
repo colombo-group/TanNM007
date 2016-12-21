@@ -1,7 +1,7 @@
 <?php
 		/**
 		 *@author TanNM
-		 **Lớp kiểm tra input
+		 *Lớp kiểm tra input
 		*/
 
 		/**
